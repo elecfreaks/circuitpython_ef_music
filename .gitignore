@@ -1,0 +1,25 @@
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# project files
+.vscode
+.idea
+
+*.mpy
+__pycache__
+_build
+*.pyc
+.env
+bundles
+.eggs
+dist
+**/*.egg-info
