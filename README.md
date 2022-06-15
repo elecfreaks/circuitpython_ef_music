@@ -39,6 +39,30 @@ The opening of Beethoven’s 5th Symphony would be encoded thus:
 
 The definition and scope of an octave conforms to the table listed [on this page about scientific pitch notation](https://en.wikipedia.org/wiki/Scientific_pitch_notation#Table_of_note_frequencies). For example, middle “C” is `'c4'` and concert “A” (440) is `'a4'`. Octaves start on the note “C”.
 
+The library has quite a lot of built-in melodies. Here’s a complete list:
+
+- DADADADUM
+- ENTERTAINER
+- PRELUDE
+- ODE
+- NYAN
+- RINGTONE
+- FUNK
+- BLUES
+- BIRTHDAY
+- WEDDING
+- FUNERAL
+- PUNCHLINE
+- PYTHON
+- BADDY
+- CHASE
+- BA_DING
+- WAWAWAWAA
+- JUMP_UP
+- JUMP_DOWN
+- POWER_UP
+- POWER_DOWN
+
 ## Class
 
 ### `class Music(pin, ticks=4, bpm=120)`
@@ -96,6 +120,17 @@ Stops the music playback. In fact, works only for `play_async(music)`.
 Resets to default state.
 
 ## Usage Example
+
+Play built-in melody
+
+```py
+import board
+from elecfreaks_music import Music
+
+music = Music(board.BUZZER_GP0)
+
+music.play(music.DADADADUM)
+```
 
 Synchronize playback
 
